@@ -12,12 +12,6 @@ $this->title = 'Заметки';
 ?>
 <h1><?= Html::encode($this->title) ?></h1>
 
-<?php if (Yii::$app->session->hasFlash('success')): ?>
-    <div class="alert alert-success">
-        <?= Html::encode(Yii::$app->session->getFlash('success')) ?>
-    </div>
-<?php endif; ?>
-
 <div class="notes-toolbar">
     <form method="get" action="<?= Url::to(['/notes']) ?>" class="d-flex" style="gap: 8px;">
         <input
