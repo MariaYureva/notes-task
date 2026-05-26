@@ -77,6 +77,35 @@
     flex-wrap: wrap;
 }
 
+.color-picker {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.color-picker__dot {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    padding: 0;
+    transition: transform .1s ease;
+}
+
+.color-picker__dot:hover {
+    transform: scale(1.1);
+}
+
+.color-picker__dot.is-active {
+    border-color: #111827;
+    box-shadow: 0 0 0 2px #fff inset;
+}
+
+.note-form {
+    max-width: 720px;
+}
+
 .notes-empty {
     color: #6b7280;
     padding: 24px;
