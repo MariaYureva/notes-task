@@ -14,6 +14,11 @@ $items = [
         'url' => ['/site/index'],
     ],
     [
+        'label' => 'Заметки',
+        'url' => ['/notes'],
+        'visible' => !Yii::$app->user->isGuest,
+    ],
+    [
         'label' => 'About',
         'url' => ['/site/about'],
     ],
