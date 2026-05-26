@@ -39,14 +39,19 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        /*
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                'GET notes' => 'note/index',
+                'GET notes/create' => 'note/create',
+                'POST notes' => 'note/create',
+                'GET notes/<id:\d+>/edit' => 'note/update',
+                'POST notes/<id:\d+>' => 'note/update',
+                'POST notes/<id:\d+>/delete' => 'note/delete',
+                'POST notes/<id:\d+>/toggle-pin' => 'note/toggle-pin',
             ],
         ],
-        */
     ],
     'params' => $params,
 ];
